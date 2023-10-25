@@ -10,7 +10,7 @@ import UIKit
 class CollectionView:UICollectionView {
     //MARK: - UI ProPerties
     
-    //MARK: - Properties
+    //MARK: -  Properties
     
     //MARK: - Define Method
     
