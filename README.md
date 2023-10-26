@@ -41,14 +41,16 @@
 ### SnapShot 및 기타
 
 <p align="center">
-  <img src="https://github.com/UMC-clutch/iOS_clutch/assets/115209527/a71b47da-19c1-48ac-ba2e-b5b736d46d20" align="left" width="40%">
-  <img src="https://github.com/UMC-clutch/iOS_clutch/assets/115209527/c1f82d9b-ab2a-4b26-97c7-da9c65129503" align="left" width="40%" style="margin-left: 200" >
+  <img src= "snapshot/snapshot_1.png" align="left" width="40%">
+  <img src= "snapshot/snapshot_2.png" align="left" width="40%" style="margin-left: 200" >
 </p>
 
-![3-2](https://github.com/UMC-clutch/iOS_clutch/assets/115209527/7f68dc1e-ac11-4afa-a168-3b230e187811)
-![4-2](https://github.com/UMC-clutch/iOS_clutch/assets/115209527/66f06827-6094-4b78-afb6-105eab8b6316)
-![5-2](https://github.com/UMC-clutch/iOS_clutch/assets/115209527/e84f6b29-1631-4453-bf6e-97d63d7fb3e1)
-![KakaoTalk_Photo_2023-10-17-09-58-28](https://github.com/UMC-clutch/iOS_clutch/assets/115209527/e7080694-0b49-4d20-9946-d89b93779126)
+<p align="center">
+  <img src= "snapshot/snapshot_3.png" align="left" width="40%">
+  <img src= "snapshot/snapshot_4.png" align="left" width="40%">
+  <img src= "snapshot/snapshot_5.png" align="left" width="40%">
+  <img src= "snapshot/snapshot_6.png" align="left" width="40%">
+</p>
 
 ---
 
