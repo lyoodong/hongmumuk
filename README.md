@@ -46,10 +46,10 @@
 </p>
 
 <p align="center">
-  <img src= "snapshot/snapshot_3.png" align="left" width="40%">
-  <img src= "snapshot/snapshot_4.png" align="left" width="40%">
-  <img src= "snapshot/snapshot_5.png" align="left" width="40%">
-  <img src= "snapshot/snapshot_6.png" align="left" width="40%">
+  <img src= "snapshot/snapshot_3.png" align="left" width="20%">
+  <img src= "snapshot/snapshot_4.png" align="left" width="20%">
+  <img src= "snapshot/snapshot_5.png" align="left" width="20%">
+  <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">
 </p>
 
 ---
