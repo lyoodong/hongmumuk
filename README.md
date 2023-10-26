@@ -49,26 +49,5 @@
   <img src= "snapshot/snapshot_3.png" align="left" width="20%">
   <img src= "snapshot/snapshot_4.png" align="left" width="20%">
   <img src= "snapshot/snapshot_5.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">
+  <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">  
 </p>
-
----
-
-<br>
-<br>
-### 희망 개선사항
-
-- MVVM 패턴으로 변경
-- 페이지 네이션 기능 추가
-- 블로그 제목에 대한 실시간 검색 기능
-- 디자이너 협의 후 UI 좀 더 깔끔하게 수정
-- Kingfisher를 통한 이미지 처리, 캐싱
-(상세페이지에서 네이버 API를 통해 받을 수 있는 사진을 통해 View를 좀 더 다채롭게 수정)
-- Fastlane 도입을 통한 배포 자동화
-- 네이버 API를 통해 수령한 검색 결과에 대한 정렬 기능 추가(추천순, 최신순, 정확도 순 등)
-- Do-try-Catch문을 통한 네트워크 에러 처리
-- 다국어 대응
-- Firebase 활용 해 유저가 ‘좋아요’ 기능 추가
-- Firebase DB를 활용해 통계 뷰 추가(주간 인기, 실시간 인기 등)
-- 사용자가 랜덤할 식당을 선택적으로 추가/삭제 수 있는 기능
-- Rx 활용
