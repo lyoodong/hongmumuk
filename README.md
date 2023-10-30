@@ -2,7 +2,17 @@
 
 ### O**utline**
 
-<img width="588" alt="스크린샷 2023-10-25 오후 7 20 57" src="https://github.com/UMC-clutch/iOS_clutch/assets/115209527/81d91215-f5f0-42e2-a25f-5ec94926bdda">
+<p align="center">
+  <img src= "snapshot/snapshot_1.png" align="left" width="40%">
+  <img src= "snapshot/snapshot_2.png" align="left" width="40%" style="margin-left: 200" >
+</p>
+
+<p align="center">
+  <img src= "snapshot/snapshot_3.png" align="left" width="20%">
+  <img src= "snapshot/snapshot_4.png" align="left" width="20%">
+  <img src= "snapshot/snapshot_5.png" align="left" width="20%">
+  <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">  
+</p>
 
 - 홍익대학교 인근 **맛집 추천 어플**
 - 앱스토어 누적 다운로드 **831**건
@@ -39,15 +49,4 @@
 - **NMapsMap**: 네이버 지도 SDK
 
 ### SnapShot 및 기타
-
-<p align="center">
-  <img src= "snapshot/snapshot_1.png" align="left" width="40%">
-  <img src= "snapshot/snapshot_2.png" align="left" width="40%" style="margin-left: 200" >
-</p>
-
-<p align="center">
-  <img src= "snapshot/snapshot_3.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_4.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_5.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">  
-</p>
+<img width="588" alt="스크린샷 2023-10-25 오후 7 20 57" src="https://github.com/UMC-clutch/iOS_clutch/assets/115209527/81d91215-f5f0-42e2-a25f-5ec94926bdda">
