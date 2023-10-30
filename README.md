@@ -41,3 +41,4 @@
 
 ### SnapShot 및 기타
 <img width="588" alt="스크린샷 2023-10-25 오후 7 20 57" src="https://github.com/UMC-clutch/iOS_clutch/assets/115209527/81d91215-f5f0-42e2-a25f-5ec94926bdda">
+<img src= "snapshot/snapshot_6" align="left" >
