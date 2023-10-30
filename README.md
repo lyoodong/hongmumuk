@@ -1,10 +1,10 @@
-# hongmagip_ios
+# hongmumuk
 
-### O**utline**
+
 <img src= "snapshot/홍무묵 스냅샷.png" align="left" >
 
-<br>
-
+---
+### Outline
 - 홍익대학교 인근 **맛집 추천 어플**
 - 앱스토어 누적 다운로드 **831**건
 (2023.10.30 기준)
