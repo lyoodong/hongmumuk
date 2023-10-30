@@ -14,7 +14,7 @@
   <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">  
 </p>
 
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 - 홍익대학교 인근 **맛집 추천 어플**
 - 앱스토어 누적 다운로드 **831**건
