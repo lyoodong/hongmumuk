@@ -1,20 +1,9 @@
 # hongmagip_ios
 
 ### O**utline**
+<img src= "snapshot/홍무묵 스냅샷.png" align="left" >
 
-<p align="center">
-  <img src= "snapshot/snapshot_1.png" align="left" width="40%">
-  <img src= "snapshot/snapshot_2.png" align="left" width="40%" style="margin-left: 200" >
-</p>
-
-<p align="center">
-  <img src= "snapshot/snapshot_3.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_4.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_5.png" align="left" width="20%">
-  <img src= "snapshot/snapshot_6.jpeg" align="left" width="20%">  
-</p>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
 
 - 홍익대학교 인근 **맛집 추천 어플**
 - 앱스토어 누적 다운로드 **831**건
