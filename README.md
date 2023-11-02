@@ -33,7 +33,7 @@
 
 > 트러블 슈팅
 > 
-1. **화면 전환** 
+1. 화면 전환 코드 **모듈화**
 
 **Issue**
 
@@ -101,6 +101,54 @@ transition(viewController: vc, style: .presentNavigation)
 transition(viewController: vc, style: .push)
 ```
 
+2. 화면의 상태에 따른 CollectionView Cell의 즉각적인 titleLabel 업데이트 이슈
+**Issue**
+
+- `isSelectedCategory`상태에 따라 `cellTitleArray`가 업데이트 되고 이후, `reloadData()`를 통해 컬랙션뷰를 업데이트
+- `cellTitleArray`가 변화하는 시점에 매번 수동으로 `reloadData()`를 호출하는 코드 작성
+
+**Solution**
+
+- `didSet`을 활용해 즉각적으로 `cellTitleArray` 변화 대응
+
+**Result**
+
+- 휴먼에러 방지
+- `cellTitleArray`의 변화 따라 UI 업데이트를 즉각적으로 대응
+
+```swift
+//기존에 수동적으로 매번 업데이트 시점을 지정
+func visibleDateSet() {
+        
+        if isSelectedCategory == false {
+            cellTitleArray = Category.allCases.map { $0.rawValue }
+            mainCollectionView.reloadData()
+        }
+    }
+
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		.
+		.
+		.
+		else {
+				self.isSelectedCategory.toggle()
+				self.configurePopButton()
+				self.configureOtherButton()
+				self.cateogory = Data.shared.categories[indexPath.row].name.rawValue
+				let data = Data.shared.categories[indexPath.row].restaurants
+				self.cellTitleArray = data.map { $0.name }
+				self.mainCollectionView.reloadData()
+				}
+          
+    }
+
+//개선 후, 수동으로 업데이트 시점을 지정한 코드 모두 삭제
+var cellTitleArray:[String] = [] {
+        didSet {
+            mainCollectionView.reloadData()
+        }
+    }
+```
 ---
 
 > Version History
@@ -120,7 +168,7 @@ transition(viewController: vc, style: .push)
 > 회고
 > 
 
-**Learned**
+**What I Learned**
 
 - 기획, 디자인, 개발, 출시까지 작지만 **iOS 개발의 사이클 경험**
 - View 와 ViewController를 분리함으로서 **Massive ViewController** 문제 해결
@@ -131,6 +179,7 @@ transition(viewController: vc, style: .push)
 
 - 네트워크 예외 처리
 - 구글 드라이브에 Json 형태로 데이터 저장
+- Massive ViewController 이슈 해결
 
 **개발 동기**
 
@@ -142,22 +191,11 @@ UI는 이전에 한 미대생 분이 제작하신 **맛집 만다라트**에 아
 
 **로직**
 
-로직 측면에서 가장 어려웠던 점은 CollectionView를 재사용해 Cell에 정보를 업데이트하는 것이었다. 단순하게 8개의 뷰컨트롤러를 생성하면 되지만, 재사용성을 증대하기 위해 화면의 상태에 따라 정보를 업데이트 했다.
-
-화면의 상태를 저장할 변수 하나를 생성하고, 상태에 따라 분기 처리를 통해 Cell에 표기될 정보/클릭 시 이벤트/ 버튼 Hidden 처리 등을 수행했다. 
-
-**출시와 리젝**
-
-초기 버전에서 네트워크 오류로, 디테일 페이지에서 블로그 후기와 지도가 전혀 보여지지 않았음에도 심사가 통과 되었다.  즉시, 자잘한 오류 개선과 약간의 UI수정 후 2차로 심사를 보냈다. 당연하게 통과될 줄 알았지만 리젝되었다. ****애플 측에서 보낸 리젝 사유는 다음과 같다. 
-
-1. 개발자에게 연락할 수 있는 Contact Info 부재
-2. 지도앱으로 이동하는 버튼에 애플 지도 추가
+로직 측면에서 가장 어려웠던 점은 CollectionView를 재사용해 Cell에 정보를 업데이트하는 것이었다. 단순하게 8개의 뷰컨트롤러를 생성하면 되지만, 재사용성을 증대하기 위해 화면의 상태에 따라 정보를 업데이트 했다. 화면의 상태를 저장할 변수 하나를 생성하고, 상태에 따라 분기 처리를 통해 Cell에 표기될 정보/클릭 시 이벤트/ 버튼 Hidden 처리 등을 수행했다. 
 
 **지표 분석 - 충돌**
 
-우연하게 새싹 멘토님께서 애플에서 제공한 앱 관련 지표를 보시면서, **충돌**에 대한 이야기를 해주셨다. 애플에서 제공하는 지표 중 **충돌**이 의미하는 것은 말 그대로 사용자가 **앱을 사용하다 터진 비율**이었다. 현재 기준으로 약 7건의 충돌이 발생했는데, 이러한 수치는 반드시 0에 수렴하도록 해야 한다는 것이 골자였다. 이를 통해 에러 처리나 강제 해제 연산자에 대한 주의가 더 필요하다고 생각했다. 
-
-![스크린샷 2023-09-24 오후 11.33.30.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/f10ba715-b66d-41e7-8fe0-785d96f7142e/c58f304c-8616-47b9-a8b2-e07acbb1b4cf/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-09-24_%EC%98%A4%ED%9B%84_11.33.30.png)
+우연하게 새싹 멘토님께서 애플에서 제공한 앱 관련 지표를 보시면서, **충돌**에 대한 이야기를 해주셨다. 애플에서 제공하는 지표 중 **충돌**이 의미하는 것은 말 그대로 사용자가 **앱을 사용하다 터진 비율**이었다. 현재 기준으로 약 7건의 충돌이 발생했는데, 이러한 수치는 반드시 0에 수렴하도록 해야 한다는 것이 골자였다. 이를 통해 에러 처리나 강제 해제 연산자에 대한 주의가 더 필요하다고 생각했다.
 
 ---
 
