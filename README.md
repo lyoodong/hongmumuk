@@ -179,7 +179,6 @@ var cellTitleArray:[String] = [] {
 
 - 네트워크 예외 처리
 - 구글 드라이브에 Json 형태로 데이터 저장
-- Massive ViewController 이슈 해결
 
 **개발 동기**
 
