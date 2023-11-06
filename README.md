@@ -131,14 +131,14 @@ func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPat
 		.
 		.
 		else {
-				self.isSelectedCategory.toggle()
-				self.configurePopButton()
-				self.configureOtherButton()
-				self.cateogory = Data.shared.categories[indexPath.row].name.rawValue
-				let data = Data.shared.categories[indexPath.row].restaurants
-				self.cellTitleArray = data.map { $0.name }
-				self.mainCollectionView.reloadData()
-				}
+			self.isSelectedCategory.toggle()
+			self.configurePopButton()
+			self.configureOtherButton()
+			self.cateogory = Data.shared.categories[indexPath.row].name.rawValue
+			let data = Data.shared.categories[indexPath.row].restaurants
+			self.cellTitleArray = data.map { $0.name }
+			self.mainCollectionView.reloadData()
+ 		      }
           
     }
 
