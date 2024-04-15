@@ -13,7 +13,6 @@ class BlogModelSingleton {
     private init() { }
     
     // MARK: - BlogModel
-    
     struct BlogModel: Codable {
         let lastBuildDate: String
         let total, start, display: Int
@@ -28,5 +27,4 @@ class BlogModelSingleton {
         let bloggerlink: String
         let postdate: String
     }
-    
 }

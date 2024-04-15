@@ -87,7 +87,6 @@ class randomView: UIView {
         location = randomRest.location
         
         randomRestaurant.setTitle("\(name)", for: .normal)
-        
     }
     
     

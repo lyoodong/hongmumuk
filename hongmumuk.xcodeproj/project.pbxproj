@@ -10,13 +10,17 @@
 		BE0031252A16170400F21B2D /* DetailPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0031242A16170400F21B2D /* DetailPopUpViewController.swift */; };
 		BE0031272A174EB600F21B2D /* reviewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0031262A174EB600F21B2D /* reviewTableView.swift */; };
 		BE0031292A174F2700F21B2D /* DetailPopUpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0031282A174F2700F21B2D /* DetailPopUpCollectionViewCell.swift */; };
-		BE1376DD2AE91B10006CFB08 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BE1376DC2AE91B10006CFB08 /* SnapKit */; };
-		BE1376E02AE91B1B006CFB08 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BE1376DF2AE91B1B006CFB08 /* Alamofire */; };
-		BE1376E32AE91CFC006CFB08 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BE1376E22AE91CFC006CFB08 /* NMapsMap */; };
 		BE2DC71F2AA754A300F3BF74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2DC7212AA754A300F3BF74 /* InfoPlist.strings */; };
 		BE2F34762A8E68C0000385E5 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F34752A8E68C0000385E5 /* MealModel.swift */; };
 		BE2F34782A8E68E3000385E5 /* BlogAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F34772A8E68E3000385E5 /* BlogAPIManager.swift */; };
 		BE2F347A2A8E6BB2000385E5 /* APIkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F34792A8E6BB2000385E5 /* APIkey.swift */; };
+		BE5248382BCD65E800704D4B /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5248372BCD65E800704D4B /* Ext+UIViewController.swift */; };
+		BE52483C2BCD661700704D4B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BE52483B2BCD661700704D4B /* Alamofire */; };
+		BE52483E2BCD661700704D4B /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BE52483D2BCD661700704D4B /* AlamofireDynamic */; };
+		BE5248442BCD667400704D4B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BE5248432BCD667400704D4B /* SnapKit */; };
+		BE5248462BCD667400704D4B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BE5248452BCD667400704D4B /* SnapKit-Dynamic */; };
+		BE52484A2BCD679600704D4B /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BE5248492BCD679600704D4B /* NMapsMap */; };
+		BE52484D2BCD67D600704D4B /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BE52484C2BCD67D600704D4B /* NMapsMap */; };
 		BE71F2052A18D6E2000D296A /* BlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE71F2042A18D6E2000D296A /* BlogModel.swift */; };
 		BE7A3DED2A17CDAB002C050A /* randomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3DEC2A17CDAB002C050A /* randomView.swift */; };
 		BE7A3DEF2A17CDBC002C050A /* randomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3DEE2A17CDBC002C050A /* randomViewController.swift */; };
@@ -38,7 +42,6 @@
 		BE8E7B2A2A126B75000BC1CF /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E7B292A126B75000BC1CF /* CollectionView.swift */; };
 		BE8E7B2C2A1373AB000BC1CF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E7B2B2A1373AB000BC1CF /* MainCollectionViewCell.swift */; };
 		BE8E7B2E2A13E695000BC1CF /* DetailPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E7B2D2A13E695000BC1CF /* DetailPopUpView.swift */; };
-		BECB6DF42A9B5FEB006F9099 /* Ext + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB6DF32A9B5FEB006F9099 /* Ext + UIViewController.swift */; };
 		BECB6E092A9BA30E006F9099 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BECB6E052A9BA30E006F9099 /* Pretendard-Bold.otf */; };
 		BECB6E0A2A9BA30E006F9099 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BECB6E062A9BA30E006F9099 /* Pretendard-ExtraBold.otf */; };
 		BECB6E0B2A9BA30E006F9099 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BECB6E072A9BA30E006F9099 /* Pretendard-Regular.otf */; };
@@ -55,6 +58,7 @@
 		BE2F34752A8E68C0000385E5 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		BE2F34772A8E68E3000385E5 /* BlogAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogAPIManager.swift; sourceTree = "<group>"; };
 		BE2F34792A8E6BB2000385E5 /* APIkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkey.swift; sourceTree = "<group>"; };
+		BE5248372BCD65E800704D4B /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
 		BE71F2042A18D6E2000D296A /* BlogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogModel.swift; sourceTree = "<group>"; };
 		BE7A3DEC2A17CDAB002C050A /* randomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomView.swift; sourceTree = "<group>"; };
 		BE7A3DEE2A17CDBC002C050A /* randomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +83,6 @@
 		BE8E7B2B2A1373AB000BC1CF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE8E7B2D2A13E695000BC1CF /* DetailPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopUpView.swift; sourceTree = "<group>"; };
 		BEA9FB122AA8D5A400766CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BECB6DF32A9B5FEB006F9099 /* Ext + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ext + UIViewController.swift"; path = "../../../../../Ext + UIViewController.swift"; sourceTree = "<group>"; };
 		BECB6E052A9BA30E006F9099 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		BECB6E062A9BA30E006F9099 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		BECB6E072A9BA30E006F9099 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
@@ -91,9 +94,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1376DD2AE91B10006CFB08 /* SnapKit in Frameworks */,
-				BE1376E32AE91CFC006CFB08 /* NMapsMap in Frameworks */,
-				BE1376E02AE91B1B006CFB08 /* Alamofire in Frameworks */,
+				BE5248462BCD667400704D4B /* SnapKit-Dynamic in Frameworks */,
+				BE52484D2BCD67D600704D4B /* NMapsMap in Frameworks */,
+				BE52483C2BCD661700704D4B /* Alamofire in Frameworks */,
+				BE52484A2BCD679600704D4B /* NMapsMap in Frameworks */,
+				BE5248442BCD667400704D4B /* SnapKit in Frameworks */,
+				BE52483E2BCD661700704D4B /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +239,7 @@
 		BECB6DF02A9B5F40006F9099 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				BECB6DF32A9B5FEB006F9099 /* Ext + UIViewController.swift */,
+				BE5248372BCD65E800704D4B /* Ext+UIViewController.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -255,9 +261,12 @@
 			);
 			name = hongmumuk;
 			packageProductDependencies = (
-				BE1376DC2AE91B10006CFB08 /* SnapKit */,
-				BE1376DF2AE91B1B006CFB08 /* Alamofire */,
-				BE1376E22AE91CFC006CFB08 /* NMapsMap */,
+				BE52483B2BCD661700704D4B /* Alamofire */,
+				BE52483D2BCD661700704D4B /* AlamofireDynamic */,
+				BE5248432BCD667400704D4B /* SnapKit */,
+				BE5248452BCD667400704D4B /* SnapKit-Dynamic */,
+				BE5248492BCD679600704D4B /* NMapsMap */,
+				BE52484C2BCD67D600704D4B /* NMapsMap */,
 			);
 			productName = hongmagip_ios;
 			productReference = BE8E7B102A126987000BC1CF /* hongmumuk.app */;
@@ -289,9 +298,9 @@
 			);
 			mainGroup = BE8E7B072A126987000BC1CF;
 			packageReferences = (
-				BE1376DB2AE91B10006CFB08 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				BE1376DE2AE91B1B006CFB08 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				BE1376E12AE91CFC006CFB08 /* XCRemoteSwiftPackageReference "NMapsMap" */,
+				BE52483A2BCD661700704D4B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BE5248422BCD667400704D4B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				BE52484B2BCD67D600704D4B /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */,
 			);
 			productRefGroup = BE8E7B112A126987000BC1CF /* Products */;
 			projectDirPath = "";
@@ -333,6 +342,7 @@
 				BE0031252A16170400F21B2D /* DetailPopUpViewController.swift in Sources */,
 				BE7A3DFD2A18A25A002C050A /* Data.swift in Sources */,
 				BE7A3DFB2A188F92002C050A /* SetColor.swift in Sources */,
+				BE5248382BCD65E800704D4B /* Ext+UIViewController.swift in Sources */,
 				BE8E7B2A2A126B75000BC1CF /* CollectionView.swift in Sources */,
 				BE71F2052A18D6E2000D296A /* BlogModel.swift in Sources */,
 				BE8E7B2E2A13E695000BC1CF /* DetailPopUpView.swift in Sources */,
@@ -343,7 +353,6 @@
 				BE7A3DF12A17CDD5002C050A /* BaseVC.swift in Sources */,
 				BE7D98EF2AA1B83300CD33AB /* InfoView.swift in Sources */,
 				BE7A3DF92A188EDA002C050A /* SetFont.swift in Sources */,
-				BECB6DF42A9B5FEB006F9099 /* Ext + UIViewController.swift in Sources */,
 				BE84C1152A4199CD00998E5D /* RestaurantLink.swift in Sources */,
 				BE8E7B182A126987000BC1CF /* ViewController.swift in Sources */,
 				BE8E7B142A126987000BC1CF /* AppDelegate.swift in Sources */,
@@ -600,46 +609,60 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BE1376DB2AE91B10006CFB08 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		BE1376DE2AE91B1B006CFB08 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		BE52483A2BCD661700704D4B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 5.9.1;
 			};
 		};
-		BE1376E12AE91CFC006CFB08 /* XCRemoteSwiftPackageReference "NMapsMap" */ = {
+		BE5248422BCD667400704D4B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jaemyeong/NMapsMap";
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 3.16.0;
+				minimumVersion = 5.7.1;
+			};
+		};
+		BE52484B2BCD67D600704D4B /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stleamist/NMapsMap-SwiftPM.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BE1376DC2AE91B10006CFB08 /* SnapKit */ = {
+		BE52483B2BCD661700704D4B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BE1376DB2AE91B10006CFB08 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		BE1376DF2AE91B1B006CFB08 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BE1376DE2AE91B1B006CFB08 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = BE52483A2BCD661700704D4B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		BE1376E22AE91CFC006CFB08 /* NMapsMap */ = {
+		BE52483D2BCD661700704D4B /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BE1376E12AE91CFC006CFB08 /* XCRemoteSwiftPackageReference "NMapsMap" */;
+			package = BE52483A2BCD661700704D4B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		BE5248432BCD667400704D4B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE5248422BCD667400704D4B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		BE5248452BCD667400704D4B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE5248422BCD667400704D4B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		BE5248492BCD679600704D4B /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NMapsMap;
+		};
+		BE52484C2BCD67D600704D4B /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE52484B2BCD67D600704D4B /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */;
 			productName = NMapsMap;
 		};
 /* End XCSwiftPackageProductDependency section */

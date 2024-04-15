@@ -33,7 +33,6 @@ class BlogAPIManager {
             case .failure(let error):
                 print("BlogAPIManager request 실패")
                 print("===오류 메시지===", error)
-                
             }
         }
     }
