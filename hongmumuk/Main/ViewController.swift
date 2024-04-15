@@ -58,8 +58,12 @@ class ViewController: UIViewController {
 //    }()
     
     //MARK: - Properties
-    var selectedCategory:Bool = false
-    var visibleData:[String] = []
+    var isSelectedCategory:Bool = false
+    var cellTitleArray:[String] = [] {
+        didSet {
+            mainCollectionView.reloadData()
+        }
+    }
     var cateogory = ""
     var selectedIndexPath:IndexPath?
     var passLocationData:[(Double,Double)] = []
@@ -74,7 +78,7 @@ class ViewController: UIViewController {
     
     @objc func randomButtonTapped(_ sender: UIButton) {
         let randomView = randomViewController()
-        transition(viewController: randomView, style: .present)
+        present(randomView, animated: true)
     }
     
     @objc func instaButtonTapped(_ sender: UIButton) {
@@ -85,7 +89,7 @@ class ViewController: UIViewController {
     
     
     @objc func popButtonTapped(_ sender: UIButton) {
-        selectedCategory.toggle()
+        isSelectedCategory.toggle()
         configurePopButton()
         configureOtherButton()
         visibleDateSet()
@@ -93,9 +97,8 @@ class ViewController: UIViewController {
     
     func visibleDateSet() {
         
-        if selectedCategory == false {
-            
-            visibleData = Category.allCases.map { $0.rawValue }
+        if isSelectedCategory == false {
+            cellTitleArray = Category.allCases.map { $0.rawValue }
             mainCollectionView.reloadData()
         }
     }
@@ -114,6 +117,7 @@ class ViewController: UIViewController {
         view.addSubview(popButton)
         view.addSubview(randomButton)
         view.addSubview(instaButton)
+        
     }
     
 //    func admobViewSetView(){
@@ -123,11 +127,11 @@ class ViewController: UIViewController {
 //    }
     
     func configurePopButton() {
-        popButton.isHidden = selectedCategory == false ? true : false
+        popButton.isHidden = isSelectedCategory == false ? true : false
     }
     
     func configureOtherButton() {
-        if selectedCategory == false || popButton.isSelected {
+        if isSelectedCategory == false || popButton.isSelected {
             instaButton.isHidden = false
             randomButton.isHidden = false
         } else {
@@ -193,21 +197,23 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return visibleData.count
+        return cellTitleArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = DetailPopUpViewController()
+        print("선택")
         selectedIndexPath = indexPath
-        switch selectedCategory {
+        switch isSelectedCategory {
         case true:
-            vc.searchItem = visibleData[indexPath.row]
-            vc.detailpopupview.restaurantLabel.text = visibleData[indexPath.row]
+            let vc = DetailPopUpViewController()
+            vc.searchItem = cellTitleArray[indexPath.row]
+            vc.detailpopupview.restaurantLabel.text = cellTitleArray[indexPath.row]
             vc.detailpopupview.categoryLabel.text = cateogory
             vc.location = passLocationData[indexPath.row]
             vc.detailpopupview.location = passLocationData[indexPath.row]
             
-            transition(viewController: vc, style: .present)
+            present(vc, animated: true)
+
             
         case false:
             if indexPath.row == 4 {
@@ -215,12 +221,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDe
                 present(vc, animated: true)
                 
             } else {
-                self.selectedCategory.toggle()
+                self.isSelectedCategory.toggle()
                 self.configurePopButton()
                 self.configureOtherButton()
                 self.cateogory = Data.shared.categories[indexPath.row].name.rawValue
                 let data = Data.shared.categories[indexPath.row].restaurants
-                self.visibleData = data.map { $0.name }
+                self.cellTitleArray = data.map { $0.name }
                 self.passLocationData = data.map{ $0.location}
                 self.mainCollectionView.reloadData()
             }
@@ -231,10 +237,10 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Identifier", for: indexPath) as! MainCollectionViewCell
         
-        cell.titleLabel.text = visibleData[indexPath.row]
+        cell.titleLabel.text = cellTitleArray[indexPath.row]
         cell.logo.isHidden = true
         
-        switch selectedCategory {
+        switch isSelectedCategory {
         case true:
             cell.setBackgroundColor(cateogory)
             cell.titleLabel.font = UIFont.hongFont.indiBold
@@ -249,10 +255,9 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDe
                 cell.logo.addTarget(self, action: #selector(logoButtonTapped), for: .touchUpInside)
             
             } else {
-                let name = visibleData[indexPath.row]
+                let name = cellTitleArray[indexPath.row]
                 cell.setBackgroundColor(name)
             }
-            
         }
         
         cell.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)

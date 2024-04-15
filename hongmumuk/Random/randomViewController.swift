@@ -41,7 +41,6 @@ class randomViewController: UIViewController {
         let vc = DetailPopUpViewController()
         let passRestaurantName = initialView.name
         guard let loaction = initialView.location else { return}
-        print(loaction)
         vc.location = loaction
         vc.detailpopupview.categoryLabel.text = initialView.category
         vc.detailpopupview.restaurantLabel.text = passRestaurantName
