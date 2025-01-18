@@ -1,10 +1,26 @@
-### PR 작성 전 체크리스트
+### PR 작성전 체크 목록
 
-- PR 가이드를 잘 준수하였는지 확인해 주세요.
-- base branch를 잘 설정해 주세요.
+다음 사항들을 체크했는지 확인해봅시다:
+
+- base branch 꼭 확인
+- PR 이름 확인
+
+### PR 타입
+
+해당 PR의 주요한 목적은 다음과 같습니다.
+
+- [ ]  Feature
+- [ ]  Feature-Append
+- [ ]  UI Design
+- [ ]  QA Fix
+- [ ]  Bugfix
+- [ ]  Code style update (formatting, local variables)
+- [ ]  Refactoring (no functional changes, no api changes)
+- [ ]  Build related changes
+- [ ]  CI related changes
+- [ ]  Documentation content changes
+- [ ]  Others
 
 ### 주요 내용
-- '주요 내용'은 해당 PR의 변경 사항을 3줄 이내로 간략히 요약해 주세요.
 
-### 추가 문서
-- 추가적인 설명, 스크린샷 등은 별도의 notion 문서를 첨부해주세요.
+### 스크린샷
